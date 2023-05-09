@@ -10,20 +10,76 @@
     <title>Paypal Bank</title>
   </head>
   <body>
-    <div class="container" id="login-area">
-      <h2 class="text-center mt-5">Welcome to Paypal Bank</h2>
-      <div class="submitted-area">
-        <h4>Login</h4>
-        <input type="text" class="form-control" placeholder="Email" /><br />
-        <input
-          type="password"
-          name=""
-          id=""
-          class="form-control"
-          placeholder="Password"
-        /><br />
-        <button class="btn btn-success">Login</button>
+    <div class="container">
+      <div id="login-area">
+        <h2 class="text-center mt-5">Welcome to Paypal Bank</h2>
+        <div class="submitted-area">
+          <h4>Login</h4>
+          <input type="text" class="form-control" placeholder="Email" /><br />
+          <input
+            type="password"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Password"
+          /><br />
+          <button id="login" class="btn btn-success">Login</button>
+        </div>
+      </div>
+
+      <!-- Transection Area -->
+      <div id="transection-area">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="status diposit">
+              <h5>Diposit</h5>
+              <h2><span>$</span>00</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="status withdraw">
+              <h5>Withdraw</h5>
+              <h2><span>$</span>00</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="status balance">
+              <h5>Balance</h5>
+              <h2><span>$</span>1240</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+
+        <div class="row input-area">
+          <div class="col-md-6">
+            <div class="submitted-area">
+              <h4>Diposit</h4>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="$ Enter diposit amount"
+              /><br />
+              <button id="addDiposit" class="btn btn-success">Diposit</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="submitted-area">
+              <h4>Withdraw</h4>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="$ Enter withdraw amount"
+              /><br />
+              <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Script File -->
+    <script src="./app.js"></script>
   </body>
 </html>

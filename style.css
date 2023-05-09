@@ -7,3 +7,25 @@ body {
   box-shadow: 5px 5px 10px lightgrey;
   padding: 30px;
 }
+#transection-area {
+  display: none;
+}
+.status {
+  padding: 20px 20px;
+  border-radius: 5px;
+  color: #fefefe;
+  margin-top: 40px;
+  text-align: center;
+}
+.diposit {
+  background-color: green;
+}
+.withdraw {
+  background-color: brown;
+}
+.balance {
+  background-color: chocolate;
+}
+.input-area {
+  margin-top: 30px;
+}
